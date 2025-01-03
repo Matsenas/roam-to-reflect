@@ -1,7 +1,11 @@
 import csv
 import re
 import os
+from dotenv import load_dotenv # type: ignore
 from pathlib import Path
+
+# Load environment variables from the .env file
+load_dotenv()
 
 def replace_urls_in_file(input_file, mapping_csv, output_file):
     """
@@ -17,7 +21,7 @@ def replace_urls_in_file(input_file, mapping_csv, output_file):
     with open(mapping_csv, 'r', encoding='utf-8') as csvfile:
         csvreader = csv.DictReader(csvfile)
         for row in csvreader:
-            firebase_url = row['Firebase URLs'].strip()
+            firebase_url = row['Firebase URL'].strip()
             matsenas_url = row['R2 URL'].strip()
             url_mapping[firebase_url] = matsenas_url
 
