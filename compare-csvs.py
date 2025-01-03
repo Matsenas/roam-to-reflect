@@ -46,9 +46,9 @@ def compare_csv_files(file1, file2, output_unmatched_smaller, output_unmatched_b
             csvwriter.writerow([url])
 
 # Replace with the paths to your CSV files and desired output files
-file1 = 'clean-Roam-urls.csv'
-file2 = 'clean-Reflect-urls.csv'
-output_unmatched_smaller = 'unmatched-Reflect.csv'
-output_unmatched_bigger = 'unmatched-Roam.csv'
+file1 = 'Roam.csv'
+file2 = 'Reflect.csv'
+output_unmatched_smaller = 'ums.csv'
+output_unmatched_bigger = 'umb.csv'
 
 compare_csv_files(file1, file2, output_unmatched_smaller, output_unmatched_bigger)
