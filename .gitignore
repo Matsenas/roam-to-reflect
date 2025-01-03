@@ -2,3 +2,4 @@
 /output/
 /downloads/
 .env
+.DS_Store
