@@ -1,9 +1,9 @@
 import re
 import csv
-import pandas as pd
+import pandas as pd # type: ignore
 import os
 from pathlib import Path
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 
 # Load environment variables from the .env file
 load_dotenv()
