@@ -1,12 +1,12 @@
 import os
-import requests
-import boto3
-import pandas as pd
+import requests # type: ignore
+import boto3 # type: ignore
+import pandas as pd # type: ignore
 import time
 from pathlib import Path
-from dotenv import load_dotenv
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+from dotenv import load_dotenv # type: ignore
+from requests.adapters import HTTPAdapter # type: ignore
+from urllib3.util.retry import Retry # type: ignore
 
 # Load environment variables from the .env file
 load_dotenv()
