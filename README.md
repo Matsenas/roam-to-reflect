@@ -26,3 +26,9 @@ Your media is currently stored on Roam's Firebase and displayed through pre-sign
 7. Import the updated JSON to Reflect. (Possibly in a new graph).
 
 That's it, you now host all your files on your own and can offboard from Roam without fear of losing your personal data.
+
+## Directory
+Your directory should look like the following before running any code:
+![Directory Example](directory-example.png)
+
+After running the code you should also have an `output` and `downloads` folders. The final files will appear in the `output` folder.
