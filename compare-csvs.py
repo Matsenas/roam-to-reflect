@@ -1,5 +1,6 @@
 import csv
 from collections import Counter
+from pathlib import Path
 
 def compare_csv_files(file1, file2, output_unmatched_smaller, output_unmatched_bigger):
     # Helper function to load unique URLs from a CSV
@@ -45,10 +46,14 @@ def compare_csv_files(file1, file2, output_unmatched_smaller, output_unmatched_b
         for url in unmatched_in_bigger:
             csvwriter.writerow([url])
 
+# Define output directory
+output_dir = Path("output") # Output folder
+output_dir.mkdir(parents=True, exist_ok=True)
+
 # Replace with the paths to your CSV files and desired output files
-file1 = 'Roam.csv'
-file2 = 'Reflect.csv'
-output_unmatched_smaller = 'ums.csv'
-output_unmatched_bigger = 'umb.csv'
+file1 = output_dir / 'Roam.csv'
+file2 = output_dir / 'Reflect.csv'
+output_unmatched_smaller = output_dir / 'ums.csv'
+output_unmatched_bigger = output_dir / 'umb.csv'
 
 compare_csv_files(file1, file2, output_unmatched_smaller, output_unmatched_bigger)
