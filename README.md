@@ -10,7 +10,7 @@ Your media is currently stored on Roam's Firebase and displayed through pre-sign
 3. Add the name of the JSON as `INPUT_FILE` to the `.env` file. For example: `INPUT_FILE=Roam.json`.
 4. Extract URLs from graph JSON (run `python 1-url-extract.py`)
 5. OPTIONAL: If you already imported Roam JSON to Reflect and want to check/apply changes to your Reflect formatted JSON.
-    - Download (export) Reflect JSON (name it `Reflect.json`) and apply steps 3-4 to it, changing the input file name in the `1-url-extract.py`file.
+    - Download (export) Reflect JSON and apply steps 3-4 to it.
     - Compare Roam and Reflect extracted URLs' CSVs to see the Roam Firebase URLs that failed to import to Reflect (run `python compare-csvs.py`). The outputs are `ums.csv` ("unmatched URLs in smaller csv") and `umb.csv` (unmatched URLs in bigger csv).
     - In my case, the Reflect JSON had 4 pictures that for some reason didn't import from Roam to Reflect. But you might not encounter a problem like that.
     - Decide whether you add the not-imported URLs to your URLs CSV file.
